@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64f52127b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Album Paralelepipedo</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="logo">Logo</a>
+        <div class="escolha">
+            <a href="index.html">album</a>
+            <a href="#">todas musicas</a>
+        </div>
+    </nav>
+    <div id="controlador">
+        <div class="musica">
+            <button><i class="fa-solid fa-backward-step"></i></button>
+            <button id="play" onclick="playmusic()"><i class="fa-solid fa-play"></i></button>
+            <button><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="musica-nome">
+            <p>Nome da musica</p>
+            <input type="range">
+        </div>
+        <div class="audio">
+            <button onclick="mutemusic()"><i class="fa-solid fa-volume-high"></i></button>
+            <input type="range" id="vol" min="0" max="100"/>
+        </div>
+    </div>
+
+    <div class="album-lista">
+        <h1 class="album-texto">Nome do album</h1>
+        <div id="nome-lista-album"><p class="p1">Id</p><p class="p2">Nome</p><p class="p3">Album</p><p class="p4">Genero</p></div>
+        <ul class="lista-musicas" id="lista-musica">
+        </ul>
+    </div>
+
+    <script src="./js/albumRequest.js"></script>
+</body>
+</html>
